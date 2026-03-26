@@ -1,0 +1,34 @@
+{
+  "name": "Aluno",
+  "type": "object",
+  "properties": {
+    "nome": {
+      "type": "string",
+      "description": "Nome completo do aluno"
+    },
+    "matricula": {
+      "type": "string",
+      "description": "N\u00famero de matr\u00edcula"
+    },
+    "email": {
+      "type": "string",
+      "description": "Email do aluno"
+    },
+    "telefone": {
+      "type": "string",
+      "description": "Telefone do aluno"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "Ativo",
+        "Inativo"
+      ],
+      "default": "Ativo",
+      "description": "Status do aluno"
+    }
+  },
+  "required": [
+    "nome"
+  ]
+}
